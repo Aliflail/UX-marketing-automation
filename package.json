@@ -1,0 +1,27 @@
+{
+  "name": "ux-intelligence-engine-content-workflow",
+  "version": "1.0.0",
+  "description": "AI-powered weekly content marketing workflow for UX Intelligence Engine.",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx scheduler/weekly-runner.ts --watch",
+    "weekly": "tsx scheduler/weekly-runner.ts --once",
+    "build": "tsc",
+    "start": "node dist/scheduler/weekly-runner.js --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "dotenv": "^16.4.7",
+    "node-cron": "^3.0.3",
+    "openai": "^4.77.0",
+    "resend": "^4.1.2",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/node-cron": "^3.0.11",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
