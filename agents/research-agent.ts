@@ -4,13 +4,29 @@ import { logger } from "../services/logger.js";
 import { readTextFile, writeJsonFile } from "../utils/file.js";
 import { getWeekDate } from "../utils/date.js";
 
+function stringifyResearchItem(value: unknown): string {
+  if (typeof value === "string") {
+    return value;
+  }
+
+  if (value && typeof value === "object") {
+    return Object.entries(value)
+      .map(([key, entry]) => `${key}: ${Array.isArray(entry) ? entry.join(", ") : String(entry)}`)
+      .join(" | ");
+  }
+
+  return String(value);
+}
+
+const ResearchItemSchema = z.unknown().transform(stringifyResearchItem);
+
 const ResearchSchema = z.object({
   week: z.string(),
-  pain_points: z.array(z.string()).min(5),
-  trending_topics: z.array(z.string()).min(3),
+  pain_points: z.array(ResearchItemSchema).min(5),
+  trending_topics: z.array(ResearchItemSchema).min(3),
   ux_crime_candidate: z.string(),
-  hot_take_angles: z.array(z.string()).min(3),
-  content_angles: z.array(z.string()).min(5)
+  hot_take_angles: z.array(ResearchItemSchema).min(3),
+  content_angles: z.array(ResearchItemSchema).min(5)
 });
 
 export type WeeklyResearch = z.infer<typeof ResearchSchema>;
