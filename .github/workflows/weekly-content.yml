@@ -1,0 +1,48 @@
+name: Weekly UX Content Workflow
+
+on:
+  schedule:
+    # 8:00 AM Asia/Dubai is 4:00 AM UTC.
+    - cron: "0 4 * * 1"
+  workflow_dispatch:
+
+jobs:
+  weekly-content:
+    name: Generate and email weekly content
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      EMAIL_FROM: ${{ secrets.EMAIL_FROM }}
+      EMAIL_TO: ${{ secrets.EMAIL_TO }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run weekly workflow
+        run: npm run weekly
+
+      - name: Upload generated outputs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: weekly-content-outputs
+          path: outputs/*.json
+          if-no-files-found: ignore
