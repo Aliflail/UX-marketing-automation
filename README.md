@@ -44,6 +44,12 @@ Run one full weekly workflow:
 npm run weekly
 ```
 
+Run a local sample without API keys or email sending:
+
+```bash
+npm run sample
+```
+
 Run the scheduler locally:
 
 ```bash
