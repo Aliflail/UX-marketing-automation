@@ -5,7 +5,29 @@ import { readJsonFile, readTextFile, writeJsonFile } from "../utils/file.js";
 import { getContentOutputPath, getWeekDate } from "../utils/date.js";
 import type { WeeklyResearch } from "./research-agent.js";
 
-const PlatformSchema = z.enum(["linkedin", "instagram", "x", "reddit"]);
+function normalizePlatform(value: unknown): "linkedin" | "instagram" | "x" | "reddit" {
+  const platform = String(value ?? "").toLowerCase().trim();
+
+  if (platform.includes("linkedin")) {
+    return "linkedin";
+  }
+
+  if (platform.includes("instagram")) {
+    return "instagram";
+  }
+
+  if (platform === "x" || platform.includes("twitter")) {
+    return "x";
+  }
+
+  if (platform.includes("reddit")) {
+    return "reddit";
+  }
+
+  throw new Error(`Unknown platform: ${String(value)}`);
+}
+
+const PlatformSchema = z.unknown().transform(normalizePlatform);
 
 const ContentPostSchema = z.object({
   platform: PlatformSchema,
