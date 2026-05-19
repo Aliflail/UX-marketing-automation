@@ -78,6 +78,51 @@ The scheduler uses `node-cron` and runs every Monday at 8:00 AM Dubai time:
 
 The schedule is defined in `scheduler/weekly-runner.ts`.
 
+## GitHub Actions
+
+The repository includes `.github/workflows/weekly-content.yml` for GitHub-hosted scheduling.
+
+It runs every Monday at 8:00 AM Dubai time, which is 4:00 AM UTC:
+
+```yaml
+0 4 * * 1
+```
+
+To configure it in GitHub:
+
+1. Open the repository on GitHub.
+2. Go to **Settings**.
+3. Go to **Secrets and variables**.
+4. Open **Actions**.
+5. Add these **Repository secrets**:
+
+```bash
+OPENAI_API_KEY=your_openai_key
+RESEND_API_KEY=your_resend_key
+EMAIL_FROM=UX Intelligence Engine <weekly@your-verified-domain.com>
+EMAIL_TO=alifnoushad.96@gmail.com
+```
+
+Optional secrets:
+
+```bash
+ANTHROPIC_API_KEY=your_anthropic_key
+```
+
+Optional repository variable:
+
+```bash
+OPENAI_MODEL=gpt-4o
+```
+
+To test manually:
+
+1. Go to the **Actions** tab.
+2. Select **Weekly UX Content Workflow**.
+3. Click **Run workflow**.
+
+The workflow uploads generated JSON files as an artifact named `weekly-content-outputs`, even if the email step fails.
+
 ## Architecture
 
 ```text
