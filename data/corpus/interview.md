@@ -165,3 +165,9 @@ I will not curse anyone. I will not be negative. I am always nice, and I don't, 
 **Q: That's tone. I need subjects. Name something you know right now that would make a good post, and that you will never publish.**
 
 You know, things like AI new tools, um, have to use AI better. How I use AI in my work? That could be good topics, but I wouldn't make a post of it.
+
+**Q: Why not those?**
+
+Okay. Fine. I think it's fine. Uh, but it's like, you know, there is a lot of other people doing the same thing. I need to stand out, and it should be different. If I'm doing something about AI, it should be different, but also should have a hook because I don't need something that everybody is ranting constantly about and the same topic over and over again.
+
+_Note: this is not a privacy fence. It is a quality bar. He will post about AI, but only with an angle nobody else has. This belongs in the voice and story files, not in data/rules.md._
