@@ -113,3 +113,9 @@ AI is going to replace design. I think that is wrong. Um, I feel like AI is goin
 **Q: Where have you seen that in your own work? What has AI actually changed in how you work?**
 
 AI has changed how we work. Before, we were just building everything in Figma, and there was a lot of animation tools like, uh, rave, um, those prototype. There was a lot of other AI... not AI. Sorry. Just animation tools which we used, uh, and a lot of Adobe tools as well. All these things have changed because now there is AI generation. Um, those tools have been replaced by Claude Claude code. Klodex, uh, IBM's Bob internal one. And there is other Oma AI, um, which also generates three d models. So there is a lot of AI generation tools replaced the work. Uh, the other tools that we were using before. Some designers are afraid of it. Uh, some designers think it will reduce their creativity, but I don't feel like that. I think it it shown... it has shown that there is no limit for what designers can create. It need not be just you know, bounded by Figma's capabilities.
+
+**Q: What question do you get asked most often?**
+
+_(Answered the other direction, as what he asks other people. Kept as given.)_
+
+I would ask, what are the new trending things in design field? Um, what are you working on? So if I'm if I'm interacting with a person, I I... I'm interested in what they're doing, how they're doing it, um, what differentiates... you know, I'm trying to pick up things that, um, other people are doing differently.
