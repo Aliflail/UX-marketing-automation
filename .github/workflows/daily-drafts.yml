@@ -1,0 +1,57 @@
+name: Daily Draft Run
+
+# Drafts one post from the Notion journal and files it into the Notion Content
+# Queue as a Draft. It never publishes anything anywhere.
+#
+# If the journal has had no entries for seven days the run logs that and files
+# nothing. That is the intended behaviour, not a failure.
+
+on:
+  schedule:
+    # 07:00 Asia/Dubai is 03:00 UTC. Weekdays only.
+    - cron: "0 3 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  daily-drafts:
+    name: Draft from journal into Notion
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+      NOTION_QUEUE_DB_ID: ${{ secrets.NOTION_QUEUE_DB_ID }}
+      NOTION_JOURNAL_DB_ID: ${{ secrets.NOTION_JOURNAL_DB_ID }}
+      NOTION_LOG_DB_ID: ${{ secrets.NOTION_LOG_DB_ID }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+      ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-5' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run daily draft
+        run: npm run daily
+
+      - name: Upload generated drafts
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: daily-drafts
+          path: outputs/*.json
+          if-no-files-found: ignore

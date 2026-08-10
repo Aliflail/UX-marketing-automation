@@ -1,9 +1,13 @@
-name: Weekly UX Content Workflow
+name: Weekly UX Content Workflow (superseded)
+
+# Superseded by daily-drafts.yml, which drafts from Alif's own journal instead
+# of from model knowledge. Kept for reference and runnable on demand.
+#
+# The schedule is deliberately disabled: running both would put two unrelated
+# sets of content in front of Alif every week, one of which is not built from
+# anything he actually did.
 
 on:
-  schedule:
-    # 8:00 AM Asia/Dubai is 4:00 AM UTC.
-    - cron: "0 4 * * 1"
   workflow_dispatch:
 
 jobs:

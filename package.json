@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx scheduler/weekly-runner.ts --watch",
+    "daily": "tsx scheduler/daily-runner.ts --once",
+    "daily:schedule": "tsx scheduler/daily-runner.ts",
     "weekly": "tsx scheduler/weekly-runner.ts --once",
     "sample": "tsx scheduler/sample-runner.ts",
     "build": "tsc",

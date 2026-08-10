@@ -63,7 +63,7 @@ export async function generateJson(options: JsonGenerationOptions): Promise<Json
 
     return retry("Anthropic JSON generation", async () => {
       const response = await anthropic.messages.create({
-        model: process.env.ANTHROPIC_MODEL ?? "claude-3-5-sonnet-latest",
+        model: process.env.ANTHROPIC_MODEL ?? "claude-sonnet-5",
         max_tokens: 6000,
         temperature: options.temperature ?? 0.4,
         system: options.systemPrompt,

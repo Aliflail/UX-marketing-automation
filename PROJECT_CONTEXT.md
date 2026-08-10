@@ -1,5 +1,15 @@
 # UX Intelligence Engine Marketing Automation Context
 
+> **Superseded.** This describes the weekly research → writer → email workflow, which has
+> been replaced by The Signal Desk. Read `CLAUDE.md` first; that is the current standing
+> brief. This file is kept because the weekly code is still in the repo and still runs on
+> demand, and because it accurately documents that code.
+>
+> One warning about using this file as a voice reference: the "Owner And Voice" section
+> below was written by an AI and contains no quotes from Alif. The only claim in it that
+> has been confirmed by him is "no em dashes". The voice files in `.claude/rules/` mark
+> every claim as supported, guessed, or quote-backed, and should be trusted over this.
+
 This document is the agent handoff brief for the UX Intelligence Engine weekly content workflow. Read it before making changes.
 
 ## Project Purpose
