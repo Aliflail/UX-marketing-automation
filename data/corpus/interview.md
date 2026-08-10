@@ -105,3 +105,7 @@ I think the designers are rushed to finish certain things, and they're not given
 **Q: When did you last see that happen? What was the project, and what got skipped?**
 
 The client project I mentioned earlier, we did not get the opportunity to test the product with, uh, any users at all. Even though we were implementing something, you know, really different experience than, uh, what was implemented before, this was a big gap, uh, that should have been filled. Um, you know, we would have made better decisions if the testing was done properly, and it would have been much easier if users were involved from the beginning. The thing is, uh, we did, um, you know, testing and interviewing certain users in the beginning, but as a product was developed, there was no enough time to, like, test the new ideas with them. and the business had different idea of when and when not to test it. So, uh, we did not, uh, get the opportunity for that.
+
+**Q: What is something everyone in design says that you think is wrong?**
+
+AI is going to replace design. I think that is wrong. Um, I feel like AI is going to enable and, um, bring out the strategic part of the designer's roles rather than design being simplified with, uh, you know, a lot of AI tools. It it will improve the strategic thinking of designers. They get more opportunity to think what to build and what not to build. So that is where the strength of designers can come in.
