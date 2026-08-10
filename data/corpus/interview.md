@@ -75,3 +75,9 @@ So with the errors and the functionality wise issues that I saw from the users, 
 He said it was a good idea, and how I presented it was... I showed him how the new layout was structured differently, uh, even though it was not a a big back end issue that we were solving. It was a UI redesign, which instantly solved a lot of problems. Uh, so it was not a big build or big effort for the development team to implement this, but it was a huge help for the users, actions, and speeding up the the process of whole scanning the documents, which could instantly increase the number of documents scanned by each person, effectively improving the efficiency of the, uh, software.
 
 _Round 1 ends here._
+
+## Round 2 — THE TENSION
+
+**Q: Think about the last week at IBM iX. What was the hardest part of it?**
+
+The hardest part was, um, something I worked for, uh, one of the clients. Uh, there were multiple iterations that was going on for this particular client, and they were never happy about it. Um, the budget of the whole project was so low, and we did not have enough time or money to spend more, um, to finish this project. But the client insisted they, um, you know, they wanted more out of what, uh, they had already seen. So there was multiple rounds of iteration, and it was very hard because they were never convinced of what designs we had shown.
