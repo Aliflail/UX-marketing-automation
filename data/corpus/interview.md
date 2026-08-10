@@ -171,3 +171,7 @@ You know, things like AI new tools, um, have to use AI better. How I use AI in m
 Okay. Fine. I think it's fine. Uh, but it's like, you know, there is a lot of other people doing the same thing. I need to stand out, and it should be different. If I'm doing something about AI, it should be different, but also should have a hook because I don't need something that everybody is ranting constantly about and the same topic over and over again.
 
 _Note: this is not a privacy fence. It is a quality bar. He will post about AI, but only with an angle nobody else has. This belongs in the voice and story files, not in data/rules.md._
+
+**Q: Is there anyone you would never write about, even anonymously?**
+
+Yeah. Nothing about my clients I would never write about because it's against my, um, you know, I've signed it in IBM. So nothing about my actual clients or my teammates names. I wouldn't write anything about them.
