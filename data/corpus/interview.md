@@ -123,3 +123,9 @@ I would ask, what are the new trending things in design field? Um, what are you 
 **Q: I meant it the other way round. What do people come to you and ask?**
 
 People come often to me to review their products or even ask my opinion on, um, what are the other features that, you know, users might need. Uh, any ideas to improve the products? or even some people ask me, like, you know, certain technical things. What is your, uh, tech stack? All these things. How are you working?
+
+**Q: What is the obvious thing nobody in design is doing?**
+
+DLS. That is the the worst thing I see in certain teams. They underestimate design language system, having a design language setup even before starting a project. They think DLS is something, um, you know, they need to hand over to the client who was the end, and they they work without any DLS upfront. And, um, at the end of the project, they just replay stuff, which is, like, a hell a lot of work, which is the worst. I hate that. So in any of the projects I'm working, I always, always try to sell the DLS front and then start on the design. And I always insisted designers to use a DLS correctly and not just break stuff and recreates things.
+
+_Round 3 ends here._
