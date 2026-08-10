@@ -155,3 +155,9 @@ I design, uh, website, apps, and everything. I make sure that whatever you see o
 _Note: no jargon at all. Two sentences. "usable for any people using it" rather than any of the words the field would use._
 
 _Round 4 ends here._
+
+## Round 5 — THE FENCE
+
+**Q: What will you never say publicly?**
+
+I will not curse anyone. I will not be negative. I am always nice, and I don't, uh, be too critiquing anybody.
