@@ -119,3 +119,7 @@ AI has changed how we work. Before, we were just building everything in Figma, a
 _(Answered the other direction, as what he asks other people. Kept as given.)_
 
 I would ask, what are the new trending things in design field? Um, what are you working on? So if I'm if I'm interacting with a person, I I... I'm interested in what they're doing, how they're doing it, um, what differentiates... you know, I'm trying to pick up things that, um, other people are doing differently.
+
+**Q: I meant it the other way round. What do people come to you and ask?**
+
+People come often to me to review their products or even ask my opinion on, um, what are the other features that, you know, users might need. Uh, any ideas to improve the products? or even some people ask me, like, you know, certain technical things. What is your, uh, tech stack? All these things. How are you working?
