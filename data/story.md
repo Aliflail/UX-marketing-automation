@@ -1,105 +1,99 @@
 # Story
 
-## Status of this file
-
-**The mission line and subjects below are provisional. The beat backlog is empty, and that is deliberate.**
-
-The Kickstart asks for at least thirty specific beats drawn from the interview. The interview has not happened, and a beat is a moment, a decision or a mistake from Alif's actual life. Inventing thirty of those would mean inventing experiences he has not had, which is the one thing this system must never do.
-
-So Section 3 holds thirty numbered slots and the questions that will fill them. It gets filled in the interview session, not before.
+Rebuilt from the interview of 2026-08-10. Source: `data/corpus/interview.md`.
 
 ---
 
 ## 1. Mission line
 
-Provisional, in the required shape. `[G — a guess. Alif has not said this. It is built from his role, his stated audience, and nothing else.]`
+**Needs Alif's confirmation.** This is derived from what he said, not quoted from him.
 
-> I help experience design leads and design managers do work that survives contact with a large organisation, the ones who know what good looks like but cannot get it past the constraints.
+> I help experience design leads and design managers protect the parts of the process that get cut first, the ones who know testing and a system have to come before the screens but keep losing that argument to the budget.
 
-Why this shape and not a broader one: Alif said he wants to reach experience design leads and design managers, and he works inside an enterprise consultancy. The barrier clause is the load-bearing part. "The ones who know what good looks like but cannot get it past the constraints" is a specific person having a specific bad week, not a demographic.
+What it is built on, in his words:
 
-**Test it in the interview.** If Alif reads that line and says "yes, roughly", it is wrong and needs to be sharper. If he says "no, it is actually more about X", the correction is the real line.
+> "designers are not given enough time to actually test with users"
+
+> "the budget of the whole project was so low, and we did not have enough time or money to spend more"
+
+> "in any of the projects I'm working, I always, always try to sell the DLS front and then start on the design"
+
+The barrier clause is the load-bearing part. He is not writing for people who need convincing that research matters. He is writing for people who already believe it and cannot get it funded.
+
+**Test:** read it back to him. If he says "yes, roughly", it is too broad and needs sharpening. If he corrects it, the correction is the real line.
 
 ## 2. Recurring subjects
 
-Four. These are already wired into the Notion Content Queue and Post Log Subject columns, and into all four voice files.
+**1. Enterprise UX reality.** Constraints, budget, iteration loops, the business overruling design. Where his position is least replaceable.
 
-**1. Enterprise UX reality** `[S — his role]`
-Design inside large organisations. Constraints, stakeholders, legacy systems, procurement, the distance between the published case study and what Tuesday actually looked like. The subject where his position is least replaceable.
+**2. Design leadership and craft.** Two threads with real heat: design language systems as a starting point rather than a handover artifact, and what good leadership actually looks like.
 
-**2. Design leadership and craft** `[S — his stated audience]`
-What leads and managers actually spend their days doing, as opposed to what leadership content says they do. Reviewing other people's work, protecting scope, deciding what not to make.
+**3. Building Ommelo.** Origin documented, current problem unsolved and openly stated.
 
-**3. Building Ommelo** `[S — he is the founder]`
-Founder-led product decisions in public. The middle, not the launch. No metrics, no milestones.
-
-**4. Design and AI in practice** `[G]`
-What actually changes in the work, as against what the discourse claims. This one is a guess and it is the most crowded subject on the internet right now. It only earns its place if Alif has a genuinely first-hand position on it. If the interview shows he does not, cut it to three subjects and do not replace it. Three real subjects beat four where one is borrowed.
+**4. Design and AI in practice.** Kept, but held to his own bar: *"it should be different, but also should have a hook because I don't need something that everybody is ranting constantly about."* If an angle is not one only he could write, drop it. A generic AI post is a failure of this file, not a use of it.
 
 ## 3. Beat backlog
 
-**Empty. Thirty slots. To be filled during the interview session.**
+Thirty-one beats, all drawn from the interview. Every one is something that actually happened to him.
 
-A beat is not a topic. "Stakeholder alignment" is a topic. "The Thursday review where the client asked why the buttons moved, and the honest answer was that nobody owned the component" is a beat.
+Strike a beat once it has been used. Never reuse. If this drops below ten, run a top-up round rather than reaching.
 
-Rules for this backlog:
+### The turn out of engineering
 
-- Every beat is something that actually happened to Alif.
-- Every beat has a when, a where, and ideally a thing someone said out loud.
-- A beat is struck through once used. It is never used twice.
-- If the backlog drops below ten, that is a signal to run a top-up round, not to reuse.
+1. Watching fintech users manually pull numbers out of large financial documents, highlighting them by hand before upload.
+2. Seeing the upload errors hit repeatedly, at the very end of all that manual work.
+3. Finding the cause was a technical issue, by watching people rather than reading tickets.
+4. Noticing routine daily actions were buried several menu layers deep.
+5. Redesigning the dashboard himself while still a software engineer, pulling key functions upfront and burying secondary ones.
+6. Showing it to his manager: small build effort for the dev team, large effect on how many documents a person could process.
+7. Deciding a year and a half in that he needed something creative but not far from what he was already doing.
+8. Winning art competitions as a child, and what that had to do with any of it.
 
-The numbered slots below carry the question that fills them. Round 3 of the interview (WHAT I NOTICE) should generate the largest share, which is why the Kickstart calls it the most important round.
+### The current client project
 
-### From THE TURN
+9. A project where the budget was too low to do the work properly, and the client wanted more anyway.
+10. "The UI can be improved" arriving as feedback round after round, with no decision behind it.
+11. Multiple iterations where the client was never convinced by anything shown.
+12. Breaking the deadlock by giving them references and letting them pick, then building the rest from what they chose.
+13. Interviewing users at the start of the project, and then never testing again once build began.
+14. Shipping a substantially different experience with no user testing at all.
+15. The business holding a different view of when testing was and was not warranted.
 
-1. _[empty]_ — the moment Alif decided to become a designer, as a scene rather than a summary.
-2. _[empty]_ — the first project that went badly, and the specific moment it became clear.
-3. _[empty]_ — how the move to Dubai happened and what was different in the first month.
-4. _[empty]_ — the decision to join IBM iX, and what he expected that turned out wrong.
-5. _[empty]_ — the moment Ommelo went from an idea to something he was actually building.
+### Inside the studio
 
-### From THE TENSION
+16. The job reading from outside as solo design work, and actually being collaboration.
+17. Asking other people in the Dubai studio for opinions on a project that is nominally only his.
+18. Creative directors who show examples rather than direct people, and what following that is like.
+19. Being inspired by someone else's work on a project he is not on.
 
-6. _[empty]_ — the gap between how the IBM iX job looks from outside and how it feels on a Tuesday.
-7. _[empty]_ — what is genuinely hard about building Ommelo while employed full time.
-8. _[empty]_ — the last time he was asked to do work he thought was wrong, and what he did.
-9. _[empty]_ — something he is currently avoiding.
-10. _[empty]_ — what he is worried he is getting wrong right now.
+### Ommelo
 
-### From WHAT I NOTICE (the largest share; keep going after the obvious answers)
+20. The moment the tool became necessary: no time to review everything the team had produced.
+21. Struggling to convince clients of design decisions, with nothing to point at behind them.
+22. Currently unsolved: how the tool decides which insights are actually useful.
+23. Learning marketing while building, as a designer who had not done it before.
+24. Building a product after years of designing other people's.
 
-11. _[empty]_ — the thing he sees in enterprise projects that others seem to miss entirely.
-12. _[empty]_ — the widely repeated design claim he thinks is simply wrong, and the project that proved it.
-13. _[empty]_ — the question he gets asked most often by juniors.
-14. _[empty]_ — the question he gets asked most often by clients or stakeholders.
-15. _[empty]_ — the obvious thing nobody in his field is doing.
-16. _[empty]_ — a design decision he has watched cost an organisation months, and how.
-17. _[empty]_ — where research actually goes to die inside a large company.
-18. _[empty]_ — the difference between what design leads say they want and what they approve.
-19. _[empty]_ — the most expensive small thing he has seen: a naming choice, a default, a form field.
-20. _[empty]_ — what he thinks the AI conversation in design is getting wrong, from direct experience only.
-21. _[empty]_ — what actually changed in his own workflow, specifically, versus what he expected to.
-22. _[empty]_ — a pattern he sees across Toyota, Lexus, Al Ghurair and Nestlé-scale work that does not appear in case studies.
-23. _[empty]_ — the thing about design systems he no longer believes.
-24. _[empty]_ — what he wishes someone had told him at year two.
-25. _[empty]_ — the compliment about his work he thinks is misplaced.
+### What he notices
 
-### From HOW I TALK
+25. Realising the no-time-to-test problem was not just his team but everywhere.
+26. Newer designers concluding that testing is not needed at all, because they have never seen it done.
+27. Designers building from inspiration, and the experience failing once it reaches development.
+28. The claim that AI will replace design, and why he thinks it is wrong.
+29. What actually changed in his tool stack, and what it replaced.
+30. Designers who are afraid AI will reduce their creativity, and his view that it removes a ceiling instead.
+31. Teams treating a design language system as something to hand over at the end, then replaying the work.
 
-26. _[empty]_ — the story he has told at least five times. Verbatim.
-27. _[empty]_ — the thing in his field that genuinely annoys him, said with the annoyance left in.
-28. _[empty]_ — how he explains his work to one specific real person who does not get it.
+### Held back deliberately
 
-### From building Ommelo
+Not beats. Recorded here so they are not mistaken for material later.
 
-29. _[empty]_ — the feature he built and then removed.
-30. _[empty]_ — the thing about building a product that surprised him after years of designing them.
+- **The blood and the toe story.** Excellent material for how he talks. Family members appear in it, and family is behind the fence. Voice reference only, never a post.
+- **Anything naming a client or a teammate.** Signed obligation, not a preference.
+- **"User research is key" as a standalone claim.** He specifically does not want that quoted back at him. Any research post carries both halves or is not written.
 
 ---
 
 ## What happens to this file
 
-DRIP reads it every session. When a beat is used it is struck through here and the Notion Journal row that produced it moves to `drafted`. When ANALYZE finds that a subject is consistently outperforming, that goes in `decisions/`, not here.
-
-This file is rewritten properly at the end of the interview session. Until then DRIP has no material and will say so rather than draft.
+DRIP reads it every session and strikes beats as they are used. When ANALYZE finds a subject consistently outperforming, that goes in `decisions/`, not here.

@@ -8,15 +8,18 @@ This repo is Alif Noushad's personal publishing system: Senior Experience Design
 
 ---
 
-## Current state: the voice files are provisional
+## Current state
 
-The interview has not happened. `data/corpus/interview.md` is empty.
+**Interview done, 2026-08-10.** Transcript in `data/corpus/interview.md`, five rounds, raw.
 
-Everything in `.claude/rules/` was assembled from a job title, four lines of brief, and an AI-written context file. Each of those files opens by saying so. They contain zero `[Q]` lines, meaning zero claims backed by an actual quote of Alif's, which is the Kickstart's hard rule.
+Rebuilt from it: all four voice files, `data/story.md` (thirty-one real beats), and `data/rules.md`. Claims now carry `[Q]` with Alif's words printed underneath, or they say plainly that they are guesses.
 
-**Consequence: do not treat generated drafts as ready.** Expect several rounds of correction, and write every correction back into the voice file in the same session.
+**The remaining gap:** almost all evidence is *speech*. The only samples of his writing are three one-line WhatsApp messages, because he has barely posted. So his character, opinions and subjects are well evidenced; the sentence-level mechanics of his written posts are still partly inferred. **His first real posts become corpus, and the voice files get updated after each one.**
 
-The next real piece of work is the compressed interview, roughly fifteen questions across five rounds. `data/corpus/interview.md` holds the structure. After it: rewrite the voice files from quotes, fill the thirty beat slots in `data/story.md`, rewrite `data/rules.md` in Alif's own words, then run the Stage 3 blind test before anything goes out publicly.
+**Two things still outstanding:**
+
+1. The mission line in `data/story.md` is derived, not quoted. It needs his confirmation or correction.
+2. **Stage 3 has not run.** Five generated posts mixed with five real passages from the transcript, shown unlabelled to three people who know how he talks. Nothing goes out publicly until that passes.
 
 ## The files
 

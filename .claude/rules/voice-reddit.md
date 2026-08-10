@@ -2,15 +2,19 @@
 
 ## What this file was built from, and how far to trust it
 
-**CONFIDENCE: LOW. Provisional.**
+**CONFIDENCE: LOW to MEDIUM.**
 
-Same three sources as the other voice files: four Kickstart lines from Alif (2026-08-10), `PROJECT_CONTEXT.md` (AI-written, contains no quotes from him), and a read of his Notion workspace (2023 planning pages, three placeholder cards, no writing).
+Updated from the interview of 2026-08-10 (`data/corpus/interview.md`). Character and subjects are evidence-backed; the Reddit-specific mechanics are not, because he has no Reddit history and the interview did not cover the platform.
 
-Not built from any Reddit comment or post Alif has written.
+Tags: `[Q]` backed by a printed quote, `[S]` supported, `[G]` guess.
 
-Tags: `[S]` supported, `[G]` guess, `[Q]` claim with a real quote underneath. **Zero `[Q]` lines.**
+*His written sentences run far shorter than his spoken ones.* On Reddit that matters less than elsewhere: this is the one platform where longer is often correct, and where his spoken register, which builds a situation before landing the point, is closest to right.
 
-When the interview transcript exists, add: *Alif's written sentences run shorter than his spoken ones.* On Reddit that is less true than elsewhere; this is the one platform where longer is often correct.
+One thing the interview surfaced that suits this platform unusually well: he says the unfinished part out loud without being asked. `[Q]`
+
+> "How the insights are drawn is something I'm still figuring out."
+
+That is the single most valuable posture on Reddit, and he has it naturally.
 
 ---
 
@@ -149,8 +153,14 @@ No links. No product. If it is genuinely relevant, say the approach, not the too
 
 ## Message voice
 
-`[G] — completely unconfirmed. Rewrite from the three real messages the interview asks for.`
+**Now evidence-backed.** His three real sent messages: `[Q]`
 
-Reddit DMs are mostly a bad idea and messaging someone after they engaged with your post reads as harvesting. If a conversation moves to DMs because they suggested it, keep it short and stay on the thing they asked about.
+> "Sure let me know, we can meet another day"
+> "Hmm, apply and if you see any other role i can refer you"
+> "Pls check your email"
+
+One line, no closing full stop, no greeting or sign-off, comma splices fine, "Pls" contracted, lowercase "i" left as he writes it.
+
+Reddit DMs are mostly a bad idea, and messaging someone after they engaged with your post reads as harvesting. If a conversation moves to DMs because they suggested it, keep it to the one line above and stay on the thing they asked about.
 
 Never a cold pitch. Never a DM that starts a conversation the thread did not.

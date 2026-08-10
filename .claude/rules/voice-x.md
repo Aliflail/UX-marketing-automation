@@ -2,17 +2,18 @@
 
 ## What this file was built from, and how far to trust it
 
-**CONFIDENCE: LOW. This file is provisional, and weaker than the LinkedIn one.**
+**CONFIDENCE: LOW to MEDIUM. Weaker than the LinkedIn file.**
 
-Built from the same three sources: four Kickstart lines from Alif (2026-08-10), `PROJECT_CONTEXT.md` (AI-written, no quotes), and a read of his Notion workspace (2023 planning pages, no writing).
+Updated from the interview of 2026-08-10 (`data/corpus/interview.md`). The character and subjects below are evidence-backed. The X-specific mechanics are not: Alif has no X archive and the interview did not cover the platform, so anything here about how he behaves *on X specifically* remains a guess.
 
-Not built from an X archive, or any post Alif has actually written on X.
+Tags: `[Q]` backed by a printed quote, `[S]` supported, `[G]` guess.
 
-Tags: `[S]` supported, `[G]` guess, `[Q]` claim with a real quote underneath. **There are zero `[Q]` lines here.**
+**His written sentences run far shorter than his spoken ones, and on X shorter again.** The three real messages he sent are each one line with no closing full stop: `[Q]`
 
-One extra warning specific to this file. The X voice guidance below is the most speculative of the four, because a person's X voice is usually the furthest from their LinkedIn voice and the least predictable from a job title. Alif said he posts "a bit" `[S]` and did not say where. If he has never posted on X, this file is describing a person who does not exist yet.
+> "Sure let me know, we can meet another day"
+> "Pls check your email"
 
-When the interview transcript exists, add: *Alif's written sentences run shorter than his spoken ones* — and on X, shorter again.
+That compression is natural to him in writing, which means X should be an easier fit than the length of his spoken answers would suggest.
 
 ---
 
@@ -26,9 +27,17 @@ Reaching design leads here is slower and more sideways than on LinkedIn. X rewar
 
 ## Tone
 
-Drier than LinkedIn. Less warm, not colder. `[G]`
+**The earlier guidance here was wrong and has been deleted.** It said X is where "occasionally dry and funny" should do most of the work. The interview shows no sardonic register anywhere, and an explicit refusal of the posture X usually rewards: `[Q]`
 
-The warmth on LinkedIn comes out in the framing and the ending; on X there is no room for framing, so what is left is the dryness. This is the platform where "occasionally dry and funny" `[S]` should be doing most of the work.
+> "I will not curse anyone. I will not be negative. I am always nice, and I don't, uh, be too critiquing anybody."
+
+That is a real constraint on this platform, and it should be said plainly: **X rewards a sharpness Alif does not have and does not want.** The version of him that does well on X is not a drier version of him. It is a shorter one.
+
+So: same warmth, less framing. The compression comes from cutting setup, not from removing goodwill. Where he has heat, it goes at a practice, never a person: `[Q]`
+
+> "they just replay stuff, which is, like, a hell a lot of work, which is the worst. I hate that."
+
+That sentence, tightened, is a good X post. A sentence with a person in it is not.
 
 Never performative. No thread-boy cadence.
 
@@ -146,8 +155,12 @@ Disagree with claims, never with people.
 
 ## Message voice
 
-`[G] — completely unconfirmed. Rewrite from the three real messages the interview asks for.`
+**Now evidence-backed.** These are the three messages Alif actually sent: `[Q]`
 
-DMs on X are lower-ceremony than LinkedIn. One line, no greeting block, no "hope you're well". If replying to something they posted, quote the specific bit rather than describing it.
+> "Sure let me know, we can meet another day"
+> "Hmm, apply and if you see any other role i can refer you"
+> "Pls check your email"
+
+Rules taken straight from them: one line, no closing full stop, no greeting and no sign-off, comma splices are fine, "Pls" contracted, lowercase "i" left alone, "Hmm," as an opener. He offers help unprompted.
 
 Never a cold pitch.

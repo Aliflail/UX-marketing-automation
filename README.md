@@ -38,11 +38,13 @@ In this repo:
 
 ## Current status
 
-**The voice files are provisional and the interview has not happened.**
+**Interview done, 2026-08-10.** The transcript is in `data/corpus/interview.md`, kept raw.
 
-They were built from a job title, four lines of brief, and an AI-written context file. Every file opens by saying so, and tags each claim `[S]` supported, `[G]` guess, or `[Q]` backed by a real quote. There are currently no `[Q]` lines anywhere, which means no claim in any voice file rests on something Alif actually said.
+The voice files, `data/story.md` and `data/rules.md` were rebuilt from it. Claims carry `[Q]` with Alif's own words printed underneath, or say plainly that they are guesses.
 
-The drafts will be competent and slightly generic until that is fixed. The fix is a compressed interview of roughly fifteen questions, then rewriting the voice files from his sentences. `data/corpus/interview.md` holds the structure.
+The remaining gap: the evidence is almost all *speech*. The only samples of his writing are three one-line WhatsApp messages, because he has barely posted. His character and subjects are well evidenced; the mechanics of his written posts are still partly inferred. His first real posts become corpus.
+
+**Stage 3 has not run yet.** Five generated posts mixed with five real passages from the transcript, shown unlabelled to three people who know how he talks. Nothing goes out publicly until that passes.
 
 ## Connecting Notion
 

@@ -2,11 +2,25 @@
 
 ## What this file was built from, and how far to trust it
 
-**CONFIDENCE: LOW. Provisional, and this file is a special case.**
+**CONFIDENCE: LOW to MEDIUM. This file is a special case.**
 
-Same three sources as the others: four Kickstart lines from Alif (2026-08-10), `PROJECT_CONTEXT.md` (AI-written, no quotes), a read of his Notion workspace (2023 pages, no writing).
+Updated from the interview of 2026-08-10 (`data/corpus/interview.md`).
 
-Tags: `[S]` supported, `[G]` guess, `[Q]` claim with a real quote underneath. **Zero `[Q]` lines.**
+Tags: `[Q]` backed by a printed quote, `[S]` supported, `[G]` guess.
+
+Two findings from the interview matter here more than anywhere else.
+
+**He states unsolved problems out loud, unprompted.** `[Q]`
+
+> "How the insights are drawn is something I'm still figuring out."
+
+That is exactly the register a good launch post needs, and most founders cannot do it. Use it.
+
+**He is learning marketing as he goes and says so.** `[Q]`
+
+> "I'm also experimenting how to market things. So it is it is something good learning for me"
+
+Which means: do not write launch copy that sounds like a marketer wrote it. The honest version is both truer and better received.
 
 **The special case:** Product Hunt is not a publishing channel. It is an event venue. `[G]`
 
@@ -120,6 +134,12 @@ Never "congrats". Never a comparison to your own product. Never a link.
 
 ## Message voice
 
-`[G] — unconfirmed. Rewrite from the three real messages the interview asks for.`
+**Now evidence-backed.** His three real sent messages: `[Q]`
 
-Rare. If a maker follows up after a comment, keep it short and stay on the thing they built. Do not convert it into a pitch for Ommelo.
+> "Sure let me know, we can meet another day"
+> "Hmm, apply and if you see any other role i can refer you"
+> "Pls check your email"
+
+One line, no closing full stop, no greeting or sign-off, "Pls" contracted, lowercase "i" left alone.
+
+Rare on this platform. If a maker follows up after a comment, keep it to that one line and stay on the thing they built. Do not convert it into a pitch for Ommelo.
