@@ -161,3 +161,7 @@ _Round 4 ends here._
 **Q: What will you never say publicly?**
 
 I will not curse anyone. I will not be negative. I am always nice, and I don't, uh, be too critiquing anybody.
+
+**Q: That's tone. I need subjects. Name something you know right now that would make a good post, and that you will never publish.**
+
+You know, things like AI new tools, um, have to use AI better. How I use AI in my work? That could be good topics, but I wouldn't make a post of it.
