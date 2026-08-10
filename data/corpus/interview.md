@@ -147,3 +147,11 @@ Hmm, apply and if you see any other role i can refer you
 Pls check your email
 
 _Note for the voice files: these are the only samples of Alif's actual WRITING captured so far, as against his speech. All three are one line. No terminal full stop. Lowercase "i" as the first person pronoun in the second. "Pls" contracted. "Hmm," as an opener. The contrast with his spoken answers above is extreme, and confirms the rule that his written sentences run far shorter than his spoken ones._
+
+**Q: Pick a real person in your life who doesn't understand what you do. Explain your job to them, the way you actually would.**
+
+I design, uh, website, apps, and everything. I make sure that whatever you see on the website and app is, um, usable for any people using it.
+
+_Note: no jargon at all. Two sentences. "usable for any people using it" rather than any of the words the field would use._
+
+_Round 4 ends here._
