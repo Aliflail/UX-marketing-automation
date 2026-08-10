@@ -81,3 +81,7 @@ _Round 1 ends here._
 **Q: Think about the last week at IBM iX. What was the hardest part of it?**
 
 The hardest part was, um, something I worked for, uh, one of the clients. Uh, there were multiple iterations that was going on for this particular client, and they were never happy about it. Um, the budget of the whole project was so low, and we did not have enough time or money to spend more, um, to finish this project. But the client insisted they, um, you know, they wanted more out of what, uh, they had already seen. So there was multiple rounds of iteration, and it was very hard because they were never convinced of what designs we had shown.
+
+**Q: In the most recent round, what did they actually say about the designs?**
+
+They kept seeing, uh, the UI can be improved. Um, that was a key feedback that comes on coming back. Uh, but even though we've shown them, like, multiple iterations, and they were not deciding on which route they had to go. So we gave them some inspirations. We gave them, uh, a few ideas about how the UI can be more aligned with their thinking. Um, and some of them, they had picked, and we used those as reference to build the rest of the screens.
