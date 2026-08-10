@@ -175,3 +175,11 @@ _Note: this is not a privacy fence. It is a quality bar. He will post about AI, 
 **Q: Is there anyone you would never write about, even anonymously?**
 
 Yeah. Nothing about my clients I would never write about because it's against my, um, you know, I've signed it in IBM. So nothing about my actual clients or my teammates names. I wouldn't write anything about them.
+
+**Q: What would you hate to see quoted back at you?**
+
+Like user research is key because I'm always an adviser of it. I don't want it to be quoted against.
+
+_Note: this is a real fence and a subtle one. He advocates for user research constantly, and works in conditions where testing routinely gets cut (see Round 3). He does not want his own advocacy quoted back at him when a project ships without research. Any post about research needs to hold both halves, or it becomes the quote he is describing._
+
+_Round 5 ends here. Interview complete, 2026-08-10._
