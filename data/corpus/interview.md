@@ -49,3 +49,15 @@ In the same session, not later:
 5. Then Stage 3: five generated posts mixed with five real passages lifted from this transcript, shown unlabelled to three people who know how he talks.
 
 Nothing goes out publicly until Stage 3 passes.
+
+---
+
+# TRANSCRIPT
+
+Compressed interview, begun 2026-08-10. Spoken answers, dictated. Raw and untidied.
+
+## Round 1 — THE TURN
+
+**Q: Take me to the moment you decided design was going to be the thing. Not the reasons, the actual scene.**
+
+So after I finish my, um, degree in computer science and engineering, I got an opportunity with an American based, um, fintech company, which I worked as a software engineer for one and a half years. But while I was working, I was not very happy with, you know, the work I was doing. And at some point of the time, I was asked to watch the users of the product that I was built for, you know, the actual users. And that sparked something in me where I was able to understand what actual problems these users were facing. So this... you know, I always wanted to also jump into a creative field, and that's when I decided, okay, I need to find something. Uh, it needs to be something creative, and it needs to be... it shouldn't be, like, too far from what I'm actually doing. That's when I landed in design. I was always a creative person. I got, you know, um, awards winning art competitions and, uh, things like that when I was young. But this is a moment, you know, I decided, okay. I need something different and design... UX design, um, you know, it was very easy for me to catch on too. It was very easy for me to learn.
