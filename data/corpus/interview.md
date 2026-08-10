@@ -69,3 +69,9 @@ I saw them using the software, uh, and it was very confusing. The software was v
 **Q: You said you identified why the errors were happening. What did you do with that, and who did you take it to?**
 
 So with the errors and the functionality wise issues that I saw from the users, I redesign the whole, um, the layout of the dashboard. I pulled out the key functions upfront and, um, you know, buried secondary actions behind because they were not used on a daily basis. Uh, I redesigned the dashboard and showed the new version to my manager, and, uh, he was impressed by it. the
+
+**Q: What did he actually say when you showed him, and what happened to the redesign after that?**
+
+He said it was a good idea, and how I presented it was... I showed him how the new layout was structured differently, uh, even though it was not a a big back end issue that we were solving. It was a UI redesign, which instantly solved a lot of problems. Uh, so it was not a big build or big effort for the development team to implement this, but it was a huge help for the users, actions, and speeding up the the process of whole scanning the documents, which could instantly increase the number of documents scanned by each person, effectively improving the efficiency of the, uh, software.
+
+_Round 1 ends here._
