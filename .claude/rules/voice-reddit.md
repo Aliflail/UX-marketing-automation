@@ -44,7 +44,7 @@ Never warm in the LinkedIn way. Warmth on Reddit reads as ingratiating. Straight
 
 ## Machine-writing tells to avoid
 
-Everything in `voice-linkedin.md`, and these matter more here because the audience is actively hunting for them:
+Everything in `voice-linkedin-alif.md`, and these matter more here because the audience is actively hunting for them:
 
 - Any structure that looks like a content template. Bolded section headers on a personal anecdote is the single clearest tell.
 - The tidy resolution. Real posts end unresolved because the person is still in the situation.

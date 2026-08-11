@@ -43,7 +43,7 @@ Never performative. No thread-boy cadence.
 
 ## Machine-writing tells to avoid
 
-Everything in `voice-linkedin.md` applies, plus these, which are specific to X:
+Everything in `voice-linkedin-alif.md` applies, plus these, which are specific to X:
 
 - The one-line post that is just an aphorism with no referent. "Good design is invisible." Nothing anchors it and it reads as a quote graphic.
 - Numbered threads where each tweet is a heading with no content.

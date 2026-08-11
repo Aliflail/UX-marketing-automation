@@ -1,24 +1,39 @@
 ---
 name: engage
-description: Surface recent posts worth commenting on and draft comments in Alif's voice, with direct links. Use when Alif types ENGAGE, or asks for comments, engagement, or who to reply to. Runs daily, fifteen to twenty minutes.
+description: Surface recent posts worth commenting on and draft comments in Alif's voice, with direct links, into the Notion Daily Plan. Use when Alif types ENGAGE, or asks for comments, engagement, or who to reply to. Runs daily, around twenty comments across LinkedIn, Reddit and Product Hunt.
 ---
 
 # ENGAGE
 
-Commenting. Daily, fifteen to twenty minutes.
+Commenting. Daily.
 
 This is the routine that actually reaches people. At a low follower count, comments do far more than posts, because they put Alif inside conversations that already have an audience.
 
+## The daily numbers
+
+**Set by Alif on 2026-08-11:** 10 on LinkedIn, 3 to 5 on Reddit, 5 on Product Hunt. Around twenty a day.
+
+**That is sixty to ninety minutes, not the fifteen to twenty this routine used to be scoped for.** Say so rather than quietly producing twenty thin comments. And when the day is short, **the comments are the part that stays and the posts are the part that goes.** At this follower count that trade is right every time, on every one of these channels.
+
+X replies have no fixed number and should happen most days regardless. Figma Community and the Ommelo company page are not commenting channels at all: the Figma activity that pays is finishing files, and a company page commenting on someone's post is an interruption from a brand where the same comment from Alif's own profile is a person joining a conversation.
+
 ## Load these first
 
-1. `.claude/rules/voice-[platform].md` — the **Comment voice** section specifically, for whichever platform is being worked. Never blend two platforms.
+1. `.claude/rules/voice-[platform].md` — the **Comment voice** section specifically, for whichever platform is being worked. Never blend two platforms. There are six files; `voice-linkedin-alif.md` is the one for commenting, never `voice-linkedin-ommelo.md`.
 2. `data/rules.md` — the privacy rails, in full.
 3. `data/story.md` — the four subjects, so comments stay on territory Alif actually owns.
 4. `data/platform.md` — where commenting matters most on each channel.
+5. `data/daily.md` — where the output goes.
+
+## Where the output goes
+
+**Into the page body of today's row in the Notion Daily Plan.** https://app.notion.com/p/2b78f8ca03b145c6a18edbd9bb7374ba
+
+Each row already carries standing entry points: subreddit new pages, LinkedIn recent-content searches, Product Hunt's today page, X live searches. Those do not go stale. **ENGAGE replaces them with links to actual posts**, which is the part that cannot be pre-seeded.
 
 ## Steps
 
-1. **Find five to eight recent posts worth commenting on.** Recent means the last 24 to 48 hours; a comment on a four-day-old post is invisible.
+1. **Find enough recent posts to hit the day's numbers.** Recent means the last 24 to 48 hours; a comment on a four-day-old post is invisible. On Reddit it is tighter still: sort by new, and go for threads under an hour old with fewer than ten comments, because a comment on a three-hour-old thread with forty replies is not read by anyone.
 
 2. **Weight toward the people Alif actually wants to reach**, which is experience design leads and design managers. Not the biggest accounts. A thoughtful comment on a post by a design manager with 2,000 followers is worth more than the two hundredth comment under a design influencer, because the manager will read it and the influencer will not.
 
@@ -53,7 +68,9 @@ This is the routine that actually reaches people. At a low follower count, comme
 
 **Reddit** — comment far more than posting. Answer the exact question from direct experience and stop. Read the subreddit's rules first. Never link to anything of his own.
 
-**Product Hunt** — comment on other people's launches in the months before Ommelo's own. Specific reaction to a specific part of what they built. Never "congrats".
+**Offering a scan on Reddit** is the highest-risk instruction in the whole brief, and it has narrow rails. Never unprompted, and never in a post. Only in a reply to someone who has described a problem the scan would actually answer, only after they have replied once, and **never in r/UXDesign in any form.** Say the approach first and the tool second. If the comment would be worse without the offer in it, the offer comes out.
+
+**Product Hunt** — five a day on other people's launches, in the months before Ommelo's own. Design tools, AI-for-design, handoff and QA. Two to four sentences on a specific part of what they built, from someone who has hit the same problem from a different angle. Never "congrats". Arriving only to launch is visible, and this daily commenting is what buys the launch.
 
 ## A warning about rhythm
 

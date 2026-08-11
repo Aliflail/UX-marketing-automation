@@ -1,4 +1,15 @@
-# Voice: LinkedIn
+# Voice: LinkedIn — Alif's personal profile
+
+**This file is for Alif's own LinkedIn profile only.** The Ommelo company page is a
+different speaker with a different job and it has its own file:
+`.claude/rules/voice-linkedin-ommelo.md`. Never write one from the other. The two
+appearing in the same feed on the same day in the same voice is the fastest way to
+make the company page read as a second Alif account, which is the specific failure
+this split exists to prevent.
+
+What lives here: founder-led credibility, waitlist, design partners. Five posts a
+week, ten comments a day. See `data/platform.md` for how the channel is played and
+`data/daily.md` for how a day is assembled.
 
 ## What this file was built from, and how far to trust it
 

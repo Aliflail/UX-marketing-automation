@@ -1,6 +1,6 @@
 ---
 name: drip
-description: Draft posts in Alif's voice from the Notion journal, and file approved drafts into the Notion Content Queue. Use when Alif types DRIP, or asks to draft, write posts, or work on content. Runs once or twice a week.
+description: Draft posts in Alif's voice from the Notion journal across all six channels, and file them into the Notion Daily Plan and Content Queue. Use when Alif types DRIP, or asks to draft, write posts, or work on content. Runs once or twice a week.
 ---
 
 # DRIP
@@ -13,9 +13,13 @@ Drafting. Once or twice a week. Expect several rounds.
 2. The Notion **Journal** database — the actual entries. https://app.notion.com/p/a5f8d48c3fed4fb59a10b75d42a93f1b
 3. `data/story.md` — the mission line, the four subjects, and the beat backlog.
 4. `data/rules.md` — the privacy rails. Read in full, every session.
-5. `.claude/rules/voice-[platform].md` — only the one for the channel being drafted. Never blend two.
-6. `data/platform.md` — how that channel is played, and the cadence ceiling.
-7. The Notion **Content Queue** — what is already queued, so nothing repeats. https://app.notion.com/p/f97c58d06d7e43d88d0655de595e76e1
+5. `.claude/rules/voice-[platform].md` — only the one for the channel being drafted. Never blend two. There are six: `voice-linkedin-alif.md`, `voice-linkedin-ommelo.md`, `voice-x.md`, `voice-reddit.md`, `voice-producthunt.md`, `voice-figma.md`.
+6. `data/platform.md` — how that channel is played, and the cadence.
+7. `data/daily.md` — how a day is assembled across all six channels.
+8. The Notion **Daily Plan** — the rows being filled. https://app.notion.com/p/2b78f8ca03b145c6a18edbd9bb7374ba
+9. The Notion **Content Queue** — what is already queued, so nothing repeats. https://app.notion.com/p/f97c58d06d7e43d88d0655de595e76e1
+
+**The two LinkedIn files are different speakers, not two registers of one.** Alif's own profile is a person. The Ommelo page is a product with one person behind it, and it must never say "we" about one person. Drafting one from the other is the failure that makes the company page read as a second Alif account.
 
 ## Steps
 
@@ -39,11 +43,19 @@ Drafting. Once or twice a week. Expect several rounds.
 
 7. **Check against the rails** before anything is marked Ready. Every rail in `data/rules.md`, not a general impression of them. If a draft sits anywhere near one, ask Alif rather than deciding.
 
-8. **File approved drafts into the Notion Content Queue** with a date against each one. Fill Hook, Date, Channel, Body, Format, Subject, Media, Status, Why this format, Beat. Status starts at `Ready` once Alif has approved it.
+8. **File approved drafts into the Notion Daily Plan**, into the day they are for. One row is one day and it holds every channel. Fill the channel's text column with the exact copy to paste, put anything Alif needs to know before pasting into Notes, and record which beats the day consumed in Beats used. Set Status to `Ready` once he has approved every field in the row.
+
+   Also file the post into the **Content Queue** as its own row, with Hook, Date, Channel, Body, Format, Subject, Media, Status, Why this format and Beat. That is the per-post record ANALYZE reads. The Daily Plan is the day view; the Content Queue is the archive.
 
 9. **Log and strike.** Move the source journal entry to `drafted` (and to `queued` once it has a date). Strike the beat in `data/story.md` so it is never used twice.
 
-10. **Respect the ceiling.** Four posts a week across all channels, and that is a ceiling, not a target. If the queue already holds four Ready rows for this week, say so and stop drafting rather than adding a fifth.
+10. **Draft about a week ahead, and no further.** Roughly a week of `Drafted` rows with a week of `Planned` rows behind them. Drafting a fortnight out from a fixed backlog produces posts about an old interview rather than posts about this week, and that difference is visible to exactly the audience this is aimed at.
+
+11. **Watch the supply, and say so out loud.** The targets are five LinkedIn posts, two or three Ommelo page posts, seven to fourteen X posts, one thread and two Reddit posts a week. The formats that need a lived beat consume about seven beats a week against a backlog of thirty-one, which is under three weeks.
+
+    **When the backlog drops below ten, stop and say so**, and propose a top-up round rather than reaching. Two formats do not consume beats and should carry the volume when supply is tight: X teardown micro-posts, where the material is a real public interface rather than Alif's life, and Figma Community files.
+
+    The seven-day journal silence rule in step 1 **does not relax because the target went up.** It is the rule that keeps the whole system honest and the higher cadence is exactly when it matters most.
 
 ## Privacy rails, in full
 

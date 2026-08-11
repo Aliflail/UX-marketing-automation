@@ -16,24 +16,28 @@ Rebuilt from it: all four voice files, `data/story.md` (thirty-one real beats), 
 
 **The remaining gap:** almost all evidence is *speech*. The only samples of his writing are three one-line WhatsApp messages, because he has barely posted. So his character, opinions and subjects are well evidenced; the sentence-level mechanics of his written posts are still partly inferred. **His first real posts become corpus, and the voice files get updated after each one.**
 
-**Two things still outstanding:**
+**Three things still outstanding:**
 
 1. The mission line in `data/story.md` is derived, not quoted. It needs his confirmation or correction.
-2. **Stage 3 has not run.** Five generated posts mixed with five real passages from the transcript, shown unlabelled to three people who know how he talks. Nothing goes out publicly until that passes.
+2. **Stage 3 has not run.** Five generated posts mixed with five real passages from the transcript, shown unlabelled to three people who know how he talks. Nothing goes out publicly until that passes. **This matters more now than it did**, because the cadence went up fivefold on 2026-08-11 and volume compounds a wrong voice faster than it compounds an audience.
+3. **The Ommelo scan request link does not exist.** Reddit and Figma Community both depend on it. Every place it is needed says `[SCAN REQUEST LINK]`, and nothing ships with a placeholder in it. Ask Alif for the URL.
 
 ## The files
 
 | File | What it is |
 |---|---|
-| `.claude/rules/voice-linkedin.md` | How Alif sounds on LinkedIn. Never blended with another platform. |
+| `.claude/rules/voice-linkedin-alif.md` | How Alif sounds on his own LinkedIn profile. Never blended with another platform. |
+| `.claude/rules/voice-linkedin-ommelo.md` | How the Ommelo company page sounds. A different speaker. Never says "we" about one person. |
 | `.claude/rules/voice-x.md` | How he sounds on X. |
 | `.claude/rules/voice-reddit.md` | How he sounds on Reddit. Every Reddit post needs his review before posting. |
 | `.claude/rules/voice-producthunt.md` | How he sounds on Product Hunt. Event-driven, not a daily channel. |
-| `data/story.md` | Mission line, four recurring subjects, the beat backlog. Currently thirty empty slots. |
+| `.claude/rules/voice-figma.md` | Figma Community. The artifact is the post. The highest confidentiality risk of the six. |
+| `data/story.md` | Mission line, four recurring subjects, the beat backlog. Thirty-one real beats. |
 | `data/journal.md` | How the daily journal works. Lives in Notion. |
 | `data/rules.md` | Privacy rails. Provisional until round 5 of the interview. |
-| `data/platform.md` | How each channel is played, and the cadence ceiling. |
-| `data/queue.md` | The publishing queue schema. Lives in Notion. |
+| `data/platform.md` | How each of the six channels is played, and the cadence. |
+| `data/daily.md` | The Daily Plan schema. One row per day, all six channels. Lives in Notion. |
+| `data/queue.md` | The publishing queue schema, one row per post. Lives in Notion. |
 | `data/log.md` | The post log schema. Lives in Notion. |
 | `data/corpus/` | Alif's actual writing. Currently empty. `README.md` has the export steps. |
 | `decisions/` | One file per month from ANALYZE: the variable changed and why. |
@@ -43,6 +47,7 @@ Rebuilt from it: all four voice files, `data/story.md` (thirty-one real beats), 
 The Signal Desk lives inside the existing **Personal Brand** page.
 
 - **The Signal Desk** — https://app.notion.com/p/3b866ed43c3a8177bb5cc18f8264f6c5
+- **Daily Plan** — https://app.notion.com/p/2b78f8ca03b145c6a18edbd9bb7374ba
 - **Content Queue** — https://app.notion.com/p/f97c58d06d7e43d88d0655de595e76e1
 - **Journal** — https://app.notion.com/p/a5f8d48c3fed4fb59a10b75d42a93f1b
 - **Post Log** — https://app.notion.com/p/eb7976ee86a44916a449f93c13ff1c4e
@@ -69,7 +74,28 @@ Nothing happened worth writing? Write "nothing today". That is real data.
 
 Plus **REPLIES**, optional, X only, with a warning at the top of the file that must be read before it is run.
 
-Cadence ceiling: **four posts a week across all channels. A ceiling, not a target.** Drafts arrive daily so there is a surplus to pick from. Unused drafts expire, and that is the design.
+## The six channels and the cadence
+
+**Changed 2026-08-11 on Alif's instruction, for the Ommelo marketing push.** The old rule was four posts a week across all channels, a ceiling rather than a target. It has been replaced by per-channel targets, and they are roughly five times the volume.
+
+| Channel | Goal | Cadence |
+|---|---|---|
+| LinkedIn — Alif | Founder-led credibility, waitlist, design partners | 5 posts/week, 10 comments/day |
+| LinkedIn — Ommelo | Followers on the company page | 2 to 3 posts/week |
+| X | Message testing, indie founder reach | 1 to 2 posts/day, 1 thread/week |
+| Reddit | Trust, and scan requests | 3 to 5 comments/day, 2 posts/week |
+| Product Hunt | Followers, launch-day assets | 5 comments/day, teaser page now, launch later |
+| Figma Community | Designer credibility, discovery | Ship templates. No daily quota. |
+
+Each has its own voice file and they are never blended. The day is assembled in the Notion **Daily Plan**, one row per day, documented in `data/daily.md`.
+
+**Three things break first at this volume, in this order.** Say them out loud when they start happening rather than absorbing them:
+
+1. **The material runs out before the writing does.** Thirty-one beats, and the formats that need one consume about seven a week. Under three weeks of supply. The journal is the only refill, and the seven-day silence rule does not relax because the target went up.
+2. **The comments are the real time cost.** Around twenty a day is sixty to ninety minutes, not the fifteen to twenty ENGAGE was scoped for. When the day is short, **cut the posts and keep the comments.**
+3. **Reddit is the account that can actually be lost.** Everything else degrades. Reddit bans, and the ban takes the history with it.
+
+A week with two good posts still beats a week with twenty filled slots. Unused drafts still expire, and that is still the design.
 
 ---
 

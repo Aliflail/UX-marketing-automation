@@ -21,7 +21,7 @@ type DailyChannel = (typeof DAILY_CHANNELS)[number];
  * Both are drafted through a DRIP session, by hand.
  */
 const VOICE_FILES: Record<DailyChannel, string> = {
-  LinkedIn: ".claude/rules/voice-linkedin.md",
+  LinkedIn: ".claude/rules/voice-linkedin-alif.md",
   X: ".claude/rules/voice-x.md"
 };
 
