@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "tsx scheduler/weekly-runner.ts --watch",
     "daily": "tsx scheduler/daily-runner.ts --once",
+    "engage": "tsx scheduler/engage-runner.ts",
     "daily:schedule": "tsx scheduler/daily-runner.ts",
     "weekly": "tsx scheduler/weekly-runner.ts --once",
     "sample": "tsx scheduler/sample-runner.ts",

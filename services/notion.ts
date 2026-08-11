@@ -208,3 +208,126 @@ export function notionConfigured(): boolean {
     process.env.NOTION_API_KEY && process.env.NOTION_QUEUE_DB_ID && process.env.NOTION_JOURNAL_DB_ID
   );
 }
+
+/* --------------------------------------------------------------------------
+ * Daily Plan
+ *
+ * One row per day, every channel in that row. This is the database Alif opens
+ * in the morning, so ENGAGE writes the day's comment targets into it rather
+ * than leaving them in a terminal he will never see.
+ * ------------------------------------------------------------------------ */
+
+export interface CommentTarget {
+  platform: string;
+  url: string;
+  summary: string;
+  comment: string;
+  why: string;
+}
+
+/**
+ * Finds today's row. Returns null rather than creating one, because a missing
+ * row means DRIP has not planned the day and inventing a row here would hide
+ * that.
+ */
+export async function findDailyPlanRow(isoDate: string): Promise<string | null> {
+  const databaseId = requireEnv("NOTION_DAILY_DB_ID");
+
+  const page = await notionFetch<NotionQueryResponse>(`/databases/${databaseId}/query`, {
+    method: "POST",
+    body: JSON.stringify({
+      filter: { property: "Date", date: { equals: isoDate } },
+      page_size: 1
+    })
+  });
+
+  return page.results[0]?.id ?? null;
+}
+
+function heading(text: string): Record<string, unknown> {
+  return {
+    object: "block",
+    type: "heading_3",
+    heading_3: { rich_text: richText(text) }
+  };
+}
+
+function paragraph(text: string): Record<string, unknown> {
+  return {
+    object: "block",
+    type: "paragraph",
+    paragraph: { rich_text: richText(text) }
+  };
+}
+
+function linkedParagraph(label: string, url: string): Record<string, unknown> {
+  return {
+    object: "block",
+    type: "paragraph",
+    paragraph: {
+      rich_text: [{ type: "text", text: { content: label, link: { url } } }]
+    }
+  };
+}
+
+/**
+ * Appends the day's drafted comments to the row, each one under its link.
+ *
+ * Appends rather than replaces: ENGAGE may run more than once in a morning,
+ * and losing yesterday's working notes to a re-run would be worse than a
+ * slightly long page.
+ */
+export async function appendCommentTargets(
+  pageId: string,
+  targets: CommentTarget[],
+  skipped: Array<{ url: string; reason: string }>
+): Promise<void> {
+  const blocks: Array<Record<string, unknown>> = [
+    heading(`Drafted comments, ${new Date().toISOString().slice(0, 10)}`),
+    paragraph(
+      "Copy each comment, open its link, paste, edit anything that is not yours. Nothing here has been posted."
+    )
+  ];
+
+  for (const [index, target] of targets.entries()) {
+    blocks.push(linkedParagraph(`${index + 1}. ${target.platform}: ${target.summary}`, target.url));
+    blocks.push(paragraph(target.comment));
+
+    if (target.why) {
+      blocks.push(paragraph(`Why this one: ${target.why}`));
+    }
+  }
+
+  if (skipped.length > 0) {
+    blocks.push(heading("Skipped, and why"));
+
+    for (const item of skipped) {
+      blocks.push(paragraph(`${item.reason} (${item.url})`));
+    }
+  }
+
+  // Notion accepts at most 100 blocks per append.
+  for (let index = 0; index < blocks.length; index += 100) {
+    await notionFetch(`/blocks/${pageId}/children`, {
+      method: "PATCH",
+      body: JSON.stringify({ children: blocks.slice(index, index + 100) })
+    });
+  }
+
+  logger.info("Wrote comment targets into the Daily Plan", {
+    drafted: targets.length,
+    skipped: skipped.length
+  });
+}
+
+/** Updates the day's comment tally, e.g. "0 / 9 drafted". */
+export async function setCommentTally(pageId: string, tally: string): Promise<void> {
+  await notionFetch(`/pages/${pageId}`, {
+    method: "PATCH",
+    body: JSON.stringify({ properties: { Comments: { rich_text: richText(tally) } } })
+  });
+}
+
+export function dailyPlanConfigured(): boolean {
+  return Boolean(process.env.NOTION_API_KEY && process.env.NOTION_DAILY_DB_ID);
+}

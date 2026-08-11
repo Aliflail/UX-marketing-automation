@@ -25,11 +25,27 @@ X replies have no fixed number and should happen most days regardless. Figma Com
 4. `data/platform.md` — where commenting matters most on each channel.
 5. `data/daily.md` — where the output goes.
 
+## Two of the four channels are automated. Two cannot be.
+
+**Reddit and Product Hunt run themselves**, every weekday at 06:30 Dubai time, in GitHub Actions. `scheduler/engage-runner.ts` finds real threads and launches through each platform's own read-only API, drafts a comment against the voice files, and writes them with their links into today's Daily Plan row. Alif opens Notion and copies. Nothing is posted.
+
+**LinkedIn and X cannot be automated, and this is not a gap to close later.** Both need an authenticated session to read a feed at all, both forbid automated reading in their terms, and LinkedIn bans accounts for it. Automating them would mean risking the account the entire plan is built on. So those two are done by hand.
+
+**Never fetch or claim to fetch LinkedIn or X, and never produce a link to a post on either that has not come from Alif.** An invented link is worse than no link.
+
+## When running interactively
+
+If Alif types ENGAGE in a session, the automated half has usually already run. So:
+
+1. Read today's Daily Plan row and tell him what is already drafted and waiting.
+2. For LinkedIn, ask him to paste. One lump of post text, unlabelled and untidied, is the right ask. Number the comments back in the order he pasted them so he can work straight down.
+3. Never make him format the input. Parsing his mess is this routine's job, not his.
+
 ## Where the output goes
 
 **Into the page body of today's row in the Notion Daily Plan.** https://app.notion.com/p/2b78f8ca03b145c6a18edbd9bb7374ba
 
-Each row already carries standing entry points: subreddit new pages, LinkedIn recent-content searches, Product Hunt's today page, X live searches. Those do not go stale. **ENGAGE replaces them with links to actual posts**, which is the part that cannot be pre-seeded.
+Each row also carries standing entry points for the manual channels: LinkedIn recent-content searches and X live searches. Those do not go stale.
 
 ## Steps
 

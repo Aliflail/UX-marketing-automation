@@ -1,0 +1,55 @@
+name: Daily ENGAGE Run
+
+# Finds real Reddit threads and Product Hunt launches, drafts a comment for each
+# one Alif can genuinely speak to, and writes them into today's Notion Daily Plan
+# row with their links.
+#
+# It never posts anything, anywhere. There is no credential in this repository
+# that can. Alif copies out of Notion by hand.
+#
+# LinkedIn and X are deliberately absent. Both need an authenticated session to
+# read a feed, both forbid automated reading, and LinkedIn bans accounts for it.
+
+on:
+  schedule:
+    # 06:30 Asia/Dubai is 02:30 UTC. Weekdays, before the drafting run at 07:00,
+    # so the comments are waiting when Alif opens Notion.
+    - cron: "30 2 * * 1-5"
+  workflow_dispatch:
+
+jobs:
+  daily-engage:
+    name: Draft comments into the Notion Daily Plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+      NOTION_DAILY_DB_ID: ${{ secrets.NOTION_DAILY_DB_ID }}
+      REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+      REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+      PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
+      ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-5' }}
+      OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Run ENGAGE
+        run: npm run engage
