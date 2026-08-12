@@ -27,6 +27,7 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
       NOTION_DAILY_DB_ID: ${{ secrets.NOTION_DAILY_DB_ID }}
       REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
@@ -34,6 +35,7 @@ jobs:
       PRODUCTHUNT_TOKEN: ${{ secrets.PRODUCTHUNT_TOKEN }}
       ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-5' }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-4o' }}
 
     steps:
       - name: Checkout repository

@@ -8,7 +8,7 @@ export interface JsonGenerationOptions {
   systemPrompt: string;
   userPrompt: string;
   temperature?: number;
-  provider?: "openai" | "anthropic";
+  provider?: "openai" | "anthropic" | "openrouter";
 }
 
 function getOpenAIClient(): OpenAI {
@@ -27,6 +27,17 @@ function getAnthropicClient(): Anthropic {
   }
 
   return new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+}
+
+function getOpenRouterClient(): OpenAI {
+  if (!process.env.OPENROUTER_API_KEY) {
+    throw new Error("OPENROUTER_API_KEY is required when provider is openrouter.");
+  }
+
+  return new OpenAI({
+    apiKey: process.env.OPENROUTER_API_KEY,
+    baseURL: "https://openrouter.ai/api/v1"
+  });
 }
 
 async function retry<T>(label: string, operation: () => Promise<T>, attempts = 3): Promise<T> {
@@ -76,6 +87,31 @@ export async function generateJson(options: JsonGenerationOptions): Promise<Json
         .join("\n");
 
       return parseJsonResponse(text);
+    });
+  }
+
+  if (provider === "openrouter") {
+    const openrouter = getOpenRouterClient();
+
+    return retry("OpenRouter JSON generation", async () => {
+      const response = await openrouter.chat.completions.create({
+        model: process.env.OPENROUTER_MODEL ?? "openai/gpt-4o",
+        temperature: options.temperature ?? 0.4,
+        max_tokens: Math.min(2048, Number(process.env.OPENROUTER_MAX_TOKENS) || 2048),
+        response_format: { type: "json_object" },
+        messages: [
+          { role: "system", content: options.systemPrompt },
+          { role: "user", content: options.userPrompt }
+        ]
+      });
+
+      const content = response.choices[0]?.message.content;
+
+      if (!content) {
+        throw new Error("OpenRouter returned an empty response.");
+      }
+
+      return parseJsonResponse(content);
     });
   }
 

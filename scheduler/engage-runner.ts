@@ -2,7 +2,7 @@ import "dotenv/config";
 import { draftComments } from "../agents/engage-agent.js";
 import { logger } from "../services/logger.js";
 import { findProductHuntLaunches, productHuntConfigured } from "../services/producthunt.js";
-import { findRedditThreads, redditConfigured } from "../services/reddit.js";
+import { findRedditThreads } from "../services/reddit.js";
 import {
   appendCommentTargets,
   dailyPlanConfigured,
@@ -53,17 +53,15 @@ export async function runEngage(): Promise<void> {
   const all: CommentTarget[] = [];
   const skipped: Array<{ url: string; reason: string }> = [];
 
-  if (redditConfigured()) {
-    try {
-      const threads = await findRedditThreads();
-      const result = await draftComments("Reddit", threads, REDDIT_TARGET);
-      all.push(...result.comments);
-      skipped.push(...result.skipped);
-    } catch (error) {
-      logger.error("Reddit leg failed. Continuing with the rest.", error);
-    }
-  } else {
-    logger.warn("Reddit is not configured. Set REDDIT_CLIENT_ID and REDDIT_CLIENT_SECRET.");
+  // Reddit runs regardless of credentials: it falls back to key-free RSS feeds
+  // when no OAuth app credentials are configured.
+  try {
+    const threads = await findRedditThreads();
+    const result = await draftComments("Reddit", threads, REDDIT_TARGET);
+    all.push(...result.comments);
+    skipped.push(...result.skipped);
+  } catch (error) {
+    logger.error("Reddit leg failed. Continuing with the rest.", error);
   }
 
   if (productHuntConfigured()) {

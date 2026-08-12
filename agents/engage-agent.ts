@@ -46,7 +46,8 @@ async function read(path: string): Promise<string> {
   }
 }
 
-function provider(): "openai" | "anthropic" {
+function provider(): "openai" | "anthropic" | "openrouter" {
+  if (process.env.OPENROUTER_API_KEY) return "openrouter";
   return process.env.ANTHROPIC_API_KEY ? "anthropic" : "openai";
 }
 

@@ -22,12 +22,14 @@ jobs:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
       NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
       NOTION_QUEUE_DB_ID: ${{ secrets.NOTION_QUEUE_DB_ID }}
       NOTION_JOURNAL_DB_ID: ${{ secrets.NOTION_JOURNAL_DB_ID }}
       NOTION_LOG_DB_ID: ${{ secrets.NOTION_LOG_DB_ID }}
       OPENAI_MODEL: ${{ vars.OPENAI_MODEL || 'gpt-4o' }}
       ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL || 'claude-sonnet-5' }}
+      OPENROUTER_MODEL: ${{ vars.OPENROUTER_MODEL || 'openai/gpt-4o' }}
 
     steps:
       - name: Checkout repository
